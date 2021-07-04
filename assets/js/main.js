@@ -66,7 +66,7 @@ export function excluirTarefa(indice) {
     carregarTarefas();
 }
 
-btnCriar.addEventListener('click', (evento) => {
+btnCriar.addEventListener('click', evento => {
     evento.preventDefault();
     criarTarefa(titulo, descricao);
 });
