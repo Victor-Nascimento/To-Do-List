@@ -1,0 +1,184 @@
+:root {
+    --branco: #ffffff;
+    --cinza: #eeeeee;
+    --cinza-medio: #cccccc;
+    --cinza-escuro: #a9a9a9;
+    --preto: #303030;
+    --laranja: #ffa500;
+    --azul: #4169e1;
+    --azul-escuro: #1e90ff;
+    --gradiente-azul: linear-gradient(to top, #1e90ff, #87cefa);
+    --gradiente-azul-invertido: linear-gradient(to top, #87cefa, #1e90ff);
+    --vermelho: tomato;
+    --vermelho-intenso: #dc143c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {    
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--cinza);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0rem 0.1rem 0.8rem var(--cinza-escuro);
+}
+
+.formulario {
+    max-width: 64rem;
+    margin: 2.4rem auto;
+    padding: 1.6rem;
+    border: 0.1rem solid var(--cinza-medio);
+    border-radius: 0.8rem;
+    /* box-shadow: 0 0 0.8rem var(--cinza-escuro); */
+}
+
+.submit-conteiner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.formulario form button {
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--branco);
+    background-color: var(--azul-escuro);
+    border: transparent;
+    border-radius: 0.4rem;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.formulario form button:hover {
+    background-color: var(--azul);
+}
+
+.grupo-input label {
+    display: block;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+}
+
+.grupo-input input[type=text] {
+    height: 4rem;
+    width: 100%;
+    max-width: 64rem;
+    margin-bottom: 1.2rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.6rem;
+    outline-color: var(--cinza-escuro);
+    border: 0.1rem solid var(--cinza-medio);
+    border-radius: 0.8rem;
+}
+
+.grupo-input textarea {
+    height: 8rem;
+    width: 100%;
+    max-width: 64rem;
+    margin-bottom: 0.8rem;
+    padding: 0.8rem 0.8rem;
+    resize: none;
+    font-size: 1.6rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline-color: var(--cinza-escuro);
+    border: 0.1rem solid var(--cinza-medio);
+    border-radius: 0.8rem;
+}
+
+.conteudo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 64rem;
+}
+
+.conteudo-nav img {
+    height: 3.2rem;
+    width: auto;
+    margin-right: 1.2rem;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem 1.6rem;
+    text-transform: uppercase;
+    color: var(--preto);
+    transition: all 300ms ease-in-out;
+    border: 0.1rem solid transparent;
+}
+
+.menu li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.4rem;
+    color: var(--laranja);
+}
+
+.bg-branco {
+    background-color: var(--branco);
+}
+
+#listaDeTarefas li {
+    list-style-type: none;
+}
+
+.caixa {
+    max-width: 64rem;
+    margin: 2.4rem auto;
+    padding: 2.4rem;
+    border: 0.1rem solid var(--cinza-medio);
+    border-radius: 0.8rem;
+    transition: all 300ms ease-in-out;
+}
+
+.caixa:hover {
+    box-shadow: 0rem 0rem 0.8rem var(--cinza-escuro);
+}
+
+.caixa h1 {
+    text-transform: uppercase;
+    margin: 0 0 1.2rem 0;
+    padding: 0 0 0.8rem 0;
+    border-bottom: 0.1rem solid var(--cinza);
+}
+
+.caixa p.data {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    text-align: right;
+    color: var(--cinza-escuro);
+}
+
+.btn-excluir {
+    margin-top: 0.8rem;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--branco);
+    background-color: var(--vermelho);
+    border: transparent;
+    border-radius: 0.4rem;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.btn-excluir:hover {
+    background-color: var(--vermelho-intenso);
+}

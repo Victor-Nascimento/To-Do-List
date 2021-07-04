@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Lista de tarefas</title>
+</head>
+
+<body>
+    <nav class="bg-branco">
+        <div class="conteudo-nav">
+            <img src="./assets/img/diario.png" alt="ícone de um diario">
+
+            <ul class="menu">
+                <li><a href="#">Criar</a></li>
+                <li><a href="#">Buscar</a></li>
+                <li><a href="#">Editar</a></li>
+                <li><a href="#">Deletar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="formulario bg-branco">
+        <form action="">
+            <div class="grupo-input">
+                <label for="titulo">Título</label>
+                <input type="text" name="titulo" id="titulo">
+            </div>
+
+            <div class="grupo-input">
+                <label for="titulo">Descrição</label>
+                <textarea name="descricao" id="descricao"></textarea>
+            </div>
+
+            <div class="submit-conteiner">
+                <button id="btnCriar" type="submit">Criar</button>
+            </div>
+
+        </form>
+    </div>
+
+    <ul id="listaDeTarefas">
+        
+    </ul>
+
+    <script type="module" src="./assets/js/main.js"></script>
+</body>
+
+</html>
