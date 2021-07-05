@@ -34,7 +34,7 @@ function carregarTarefas() {
 
         let indice = arrayTarefas.indexOf(item);
         const a = criarElemento('button', 'btn-excluir');
-        a.setAttribute("onclick", `excluirTarefa(${indice})`);
+        a.addEventListener('click', () => excluirTarefa(indice));
         const texto = document.createTextNode('Excluir');
         a.appendChild(texto);
 
