@@ -33,17 +33,17 @@ function carregarTarefas() {
         pData.appendChild(data);
 
         let indice = arrayTarefas.indexOf(item);
-        const a = criarElemento('button', 'btn-excluir');
-        a.addEventListener('click', () => excluirTarefa(indice));
+        const btn = criarElemento('button', 'btn-excluir');
+        btn.addEventListener('click', () => excluirTarefa(indice));
         const texto = document.createTextNode('Excluir');
-        a.appendChild(texto);
+        btn.appendChild(texto);
 
 
         const li = criarElemento('li', 'caixa bg-branco');
         li.appendChild(h1);
         li.appendChild(p);
         li.appendChild(pData);
-        li.appendChild(a);
+        li.appendChild(btn);
 
         listaDeTarefas.appendChild(li);
     }
